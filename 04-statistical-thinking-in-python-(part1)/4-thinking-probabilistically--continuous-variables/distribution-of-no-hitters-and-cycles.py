@@ -28,7 +28,7 @@ def successive_poisson(tau1, tau2, size=1):
     return t1 + t2
 
 # Draw samples of waiting times: waiting_times
-waiting_times = np.array(successive_poisson(764, 715, 100000))
+waiting_times = successive_poisson(764, 715, 100000)
 
 # Make the histogram
 _ = plt.hist(waiting_times, bins=100, normed=True, histtype='step')
